@@ -4,6 +4,12 @@
       "route": "/*",
       "serve": "/index.html",
       "statusCode": 200
+    },
+    {
+      "route": "/authenticated",
+      "allowedRoles": [
+        "authenticated"
+      ]
     }
   ]
 }
