@@ -1,6 +1,22 @@
 {
   "routes": [
     {
+      "route": "/login",
+      "serve": "/.auth/login/google"
+    },
+    {
+      "route": "/.auth/login/twitter",
+      "statusCode": "404"
+    },
+    {
+      "route": "/.auth/login/github",
+      "statusCode": "404"
+    },
+    {
+      "route": "/logout",
+      "serve": "/.auth/logout"
+    },
+    {
       "route": "/authenticated",
       "allowedRoles": [
         "authenticated"
